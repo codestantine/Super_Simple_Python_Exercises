@@ -9,11 +9,13 @@ names = names_string.split(", ")
 
 # Important: You are not allowed to use the choice() function.
 
-# first step
-# length of names list
-list_length = len(names)
+# index 0 - length of the list - 1
+length_of_list = len(names)
+high_index = length_of_list - 1
+low_index = 0
+lucky_index = random.randint(low_index, high_index)
+lucky_person = names[lucky_index]
+print(f"{lucky_person} is paying for everyone's food bill today!")
 
-random_index = random.randint(0, 4)
-lucky_person = names[random_index]
-print(f"{lucky_person} will pay for everybody's food bill.")
+
 
